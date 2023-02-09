@@ -1,0 +1,71 @@
+# How HTTPS works behind the scene?
+
+HTTPS is a secure version of the HTTP protocol.It allows transferring the data in an encrypted form. It uses SSL (Secure sockets layer) as encryption protocol which uses two keys as public and private key.
+Private key: This key is available on the web server, which is managed by the owner of a website. It decrypts the information which is encrypted by the public key.
+Public key: This key is available to everyone. It converts the data into an encrypted form.
+The attacker would see a bunch of seemingly random characters.It is usually required when we enter bank account details for security purposes.
+
+
+# What are different http methods available and what they exactly do.
+
+The commonly used HTTP methods are GET, POST, PUT, PATCH, and DELETE which perform basic CRUD operations (create, read, update, and delete).
+
+1) GET method: GET is used to read data from a web server.It returns an HTTP status code of 200 (OK) if the data is successfully retrieved from the server.
+
+2) POST metthod: POST is used to send data to the server. On successful completion, it returns an HTTP status code of 201.
+
+3) PUT method: PUT is used to modify the data on the server. It replaces the entire content at a particular location with data that is passed in the body. If there are no resources that match the request, it will generate one.
+
+4) PATCH method: PATCH is similar to PUT , but the only difference is, it modifies a part of the data. It will only replace the content that you want to update.
+
+5) DELETE method: DELETE is used to delete the data on the server at a specified location.
+
+
+# Understand and explain the use of various http response codes.
+
+The Status-Code is a 3-digit integer where the first digit of the Status-Code defines the class of response and the last two digits have different roles. There are 5 classes for the first digit:
+1) 1XX -> signifies information about the program 
+        - Different 1XX codes are - 100 (Continue) , 101 (Switching Protocols)
+        
+2) 2XX -> signifies successful requests
+        - Differnet 2XX codes are - 200 (OK) , 201 (Created) , 202 (Accepted) , etc....
+        
+3) 3XX -> signifies redirection 
+        - Different 3XX codes are - 301 ( moved permanently) , 302 (found) , 305 (accepted) , etc...
+        
+4) 4XX -> Client error
+        - Different 4XX codes are - 400 (Bad request) , 401 (Unauthorized Access) , 402 (Payment required) , etc....
+        
+5) 5XX -> Server Error 
+        - Differnet 5XX codes are - 500 (Internal server error) , 502 (Bad gateway error) , etc,,,,
+        
+        
+ # What are the different web communication protocols and their use cases?
+ 
+ 1) File Transfer Protocol (FTP): FTP allows users to transfer files from one machine to another.
+ 2) Post office Protocol (POP): POP3 is designed for receiving incoming E-mails.
+ 3) Hyper Text Transfer Protocol (HTTP): HTTP is designed for transferring a hypertext among two or more systems.
+ 4) Transmission Control Protocol (TCP): TCP is a popular communication protocol which is used for communicating over a network.
+ etc........
+ 
+ 
+# Pros and cons of Single page and multi page applications.
+
+--Pros of Single page applications:
+       * Quick Loading Time
+       * Seamless User Experience
+       * Uses Less Bandwidth
+       
+--Cons of Single page applications:
+        * Uses a Lot of Browser Resources
+        * Security Issues
+        * Doesn’t Perform Well With search engines
+        
+ --Pros of Multi page applications:
+        * Unlimited scalability
+        * Better SEO
+        
+ --Cons of Multi page applications:
+        * More time for deployment
+        * Slower speed
+        * Harder maintainence and updates
